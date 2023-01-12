@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Lobster;
+    src: url("./Lobster-Regular.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    text-align: center;
+    margin: 0;
+}
+.cookies{
+    background-color: darkblue;
+    color: white;
+    line-height: 100px;
+    font-size: 50px;
+    font-family: Lobster;
+    text-shadow: -2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 50px;
+}
+.cookiebutton{
+    display: grid;
+    place-content: center;
+    background: white;
+    background-image: url(https://media.tenor.com/xefRiOCV7GsAAAAj/confetti-girl-scout.gif);
+    border-bottom: #000 solid 1px;
+}
+.cookiebutton button{
+    background: transparent;
+    border: none !important;
+    
+}
+
+.cookiebutton button:active{
+    transform: scale(1.1);
+    transition: 5ms ease-out;
+}
+
+main{
+    min-height: 100vh;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+header{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    place-items: center;
+    background-color: rgb(13, 13, 13);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+.logo{
+    font-family: Lobster;
+    color: white;
+    font-size: 15px;
+    text-shadow: -2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000;
+}
+.links{
+    display: grid;
+    grid-auto-flow: column;
+    color: white;
+    position: right;
+    font-size: 25px;
+    margin-left: auto;
+    padding: 30px;
+    gap: 20px;
+}
+.links p{
+    margin: 0;
+}
+
+footer {
+    background: rgb(13, 13, 13);
+    text-align: center;
+    color: white;
+}
+
+.mail {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 15px;
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+  
+@keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 130vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: linear-gradient(-45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+}

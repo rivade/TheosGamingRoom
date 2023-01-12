@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="css/snake.css"></link>
+    <script src="javascript/snake.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Theo's Gaming Room!</h1>
+        </div>
+        <div class="links">
+            <a href="#footer">Contact</p>
+            <a href="./index.html">Games</a>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="title">Snake Game</h1>
+        <div class="gamecontainer">
+            <div></div>
+            <div class="gamescreen">
+                <div id="startScreen">
+                  <p id="startText">Press start to begin</p>
+                  <button id="startButton">Start</button>
+                </div>
+                <div id="gameOver" style="display: none">
+                    <p id="gameOverText">Game Over!</p>
+                    <button id="resetButton">Reset</button>
+                </div>
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+            </div>
+
+            <div class="scorelabels">
+                <div class="score">
+                    Score: <span class="score-label">0</span>
+                </div>
+                <div class="highscore">
+                    Highscore: <span class="highscore-label">0</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>Lämna gärna feedback!</p>
+        <div class="mail">
+          <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="Mail ikon" width="50">
+          <p>Mail: theo.lindqvist@elev.ga.ntig.se</p>
+        </div>
+        <p>© Theo Lindqvist 2022</p>
+    </footer>
+</body>
+</html>

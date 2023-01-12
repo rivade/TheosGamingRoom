@@ -1,0 +1,164 @@
+/* NAVBAR OCH FOOTER (Samma för varje sida) */
+@font-face {
+    font-family: Lobster;
+    src: url("./Lobster-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    place-items: center;
+    background-color: rgb(13, 13, 13);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.logo {
+    font-family: Lobster;
+    color: white;
+    font-size: 15px;
+}
+
+.links {
+    display: grid;
+    grid-auto-flow: column;
+    color: white;
+    position: right;
+    font-size: 25px;
+    margin-left: auto;
+    padding: 30px;
+    gap: 20px;
+}
+
+.links a:hover {
+    transform: scale(1.1);
+    transition: all ease-out 0.2s;
+}
+
+footer {
+    background: rgb(13, 13, 13);
+    text-align: center;
+    color: white;
+}
+
+.mail {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 15px;
+}
+
+/* NAVBAR OCH FOOTER (Samma för varje sida) */
+
+
+
+/* Game Design */
+.game {
+    background: white;
+    width: 250px;
+    min-height: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+.score{
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#reset-button {
+    display: none;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+#incorrect-guesses {
+    min-height: 20px;
+}
+
+.game-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 75px;
+}
+
+.hangman-picture {
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.guess-info{
+    color: white;
+    font-family: Lobster;
+    font-size: 20px;
+    text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+}
+
+/* Game Design */
+
+
+
+/* Webpage Design */
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 130vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: linear-gradient(-45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+}
+
+.title {
+    color: white;
+    font-family: Lobster;
+    text-shadow: -2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    place-content: center;
+    text-align: center;
+}
+
+/* Webpage Design */

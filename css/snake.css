@@ -1,0 +1,175 @@
+/* NAVBAR OCH FOOTER (Samma för varje sida) */
+@font-face {
+    font-family: Lobster;
+    src: url("./Lobster-Regular.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+header{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    place-items: center;
+    background-color: rgb(13, 13, 13);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.logo{
+    font-family: Lobster;
+    color: white;
+    font-size: 15px;
+}
+
+.links{
+    display: grid;
+    grid-auto-flow: column;
+    color: white;
+    position: right;
+    font-size: 25px;
+    margin-left: auto;
+    padding: 30px;
+    gap: 20px;
+}
+.links p{
+    margin: 0;
+}
+
+footer {
+    background: rgb(13, 13, 13);
+    text-align: center;
+    color: white;
+}
+
+.mail {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 15px;
+}
+/* NAVBAR OCH FOOTER (Samma för varje sida) */
+
+
+
+/* Game Design */  
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: white;
+}
+  
+#gameOver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+#gameOverText {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: lightgray;
+}
+#startScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#startText {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 20px;
+}
+/* Game Design */
+
+
+
+/* Webpage Design */
+@-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+  
+@keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 130vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: linear-gradient(-45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+}
+  
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title{
+    color: white;
+    font-family: Lobster;
+    text-shadow: -2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000;
+}
+
+.gamecontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.scorelabels{
+    width: 35%;
+    text-align: center;
+    font-family: Lobster;
+    color: white;
+    font-size: 22px;
+    margin-top: 100px;
+}
+/* Webpage Design */
