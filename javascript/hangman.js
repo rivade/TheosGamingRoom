@@ -1,4 +1,4 @@
-const words = ["earthquake", "imagine", "agile", "backflip", "machine", "hungry", "kick", "guitar", "laptop", "chair", "stew", "configuration", "saturation", "component", "exponential", "happy", "party", "balloon", "nice", "animal", "house"];
+const words = ["earthquake", "imagine", "agile", "backflip", "machine", "hungry", "kick", "guitar", "laptop", "chair", "stew", "configuration", "saturation", "component", "exponential", "happy", "party", "balloon", "nice", "animal", "house", "butcher", "apostrophe", "hangman", "turkey", "kitchen"];
 let word = words[Math.floor(Math.random() * words.length)];
 let wordArray = word.split("");
 let incorrectGuesses = [];
@@ -28,7 +28,7 @@ const updateIncorrectGuesses = () => {
 
 const handleGuess = () => {
     if (!finished){
-        const letter = document.getElementById("letter-input").value;
+        const letter = document.getElementById("letter-input").value.toLowerCase();
         if (!letter.match(/^[a-zA-Z]$/)) {
             alert("Please enter a single letter");
         } else if (!wordArray.includes(letter)) {
