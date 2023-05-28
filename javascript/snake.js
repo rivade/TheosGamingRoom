@@ -24,21 +24,21 @@ resetButton.addEventListener("click", reset);
 startButton.addEventListener("click", start);
 
 function keydownHandler(e) {
-    if (e.code === "KeyA" && dx === 0) {
-      dx = -10;
-      dy = 0;
-    } else if (e.code === "KeyD" && dx === 0) {
-      dx = 10;
-      dy = 0;
-    } else if (e.code === "KeyW" && dy === 0) {
-      dx = 0;
-      dy = -10;
-    } else if (e.code === "KeyS" && dy === 0) {
-      dx = 0;
-      dy = 10;
-    }
+  if (e.code === "KeyA" && dx === 0) {
+    dx = -10;
+    dy = 0;
+  } else if (e.code === "KeyD" && dx === 0) {
+    dx = 10;
+    dy = 0;
+  } else if (e.code === "KeyW" && dy === 0) {
+    dx = 0;
+    dy = -10;
+  } else if (e.code === "KeyS" && dy === 0) {
+    dx = 0;
+    dy = 10;
+  }
 }
-  
+
 
 function reset() {
   snake = [{ x: 150, y: 150 }, { x: 140, y: 150 }, { x: 130, y: 150 }, { x: 120, y: 150 }, { x: 110, y: 150 }];

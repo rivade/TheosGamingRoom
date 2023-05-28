@@ -18,7 +18,8 @@ header {
     display: grid;
     grid-template-columns: 300px 1fr;
     place-items: center;
-    background-color: rgb(13, 13, 13);
+    background-color: rgba(13, 13, 13, .5);
+    opacity: 1;
     position: sticky;
     top: 0;
     z-index: 10000;
@@ -28,7 +29,6 @@ header {
     font-family: Lobster;
     color: white;
     font-size: 15px;
-    margin: 0px;
 }
 
 .links {
@@ -40,6 +40,10 @@ header {
     margin-left: auto;
     padding: 30px;
     gap: 20px;
+}
+
+.links p {
+    margin: 0;
 }
 
 .links a:hover {
@@ -59,9 +63,15 @@ footer {
     place-content: center;
     gap: 15px;
 }
+
 /* NAVBAR OCH FOOTER (Samma för varje sida) */
 
 /* Webpage Design */
+
+main {
+    display: grid;
+    grid-auto-flow: row;
+}
 @-webkit-keyframes AnimateBG {
     0% {
         background-position: 0% 50%;
@@ -99,49 +109,13 @@ body {
     -webkit-animation: AnimateBG 20s ease infinite;
     animation: AnimateBG 20s ease infinite;
 }
-/* Webpage Design */
 
-.slider{
-    width: 100%;
-    max-width: 800px;
-    height: 350px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 50%;
 }
-.slide{
-    width: 100%;
-    max-width: 800px;
-    height: 350px;
-    position: absolute;
-    transition: all 0.5s;
-}
-.slide img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.btn{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    font-size: 18px;
-    box-shadow: 1px 1px 1px 1px rgb(23, 23, 23);
-}
-.btn:active{
-    transform: scale(1.1);
-}
-.btn-prev{
-    top: 45%;
-    left: 2%;
-}
-.btn-next{
-    top: 45%;
-    right: 2%;
-}
+
+/* Webpage Design */

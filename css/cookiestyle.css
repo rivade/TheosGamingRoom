@@ -79,6 +79,11 @@ header{
     margin: 0;
 }
 
+.links a:hover {
+    transform: scale(1.1);
+    transition: all ease-out 0.2s;
+}
+
 footer {
     background: rgb(13, 13, 13);
     text-align: center;
